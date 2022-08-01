@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula Idade</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>  <!-- serve para configurar a calculadora/a div principal dentro do fundo-->
+      <div class="container"> <!--espaço total da calculadora -->
+        <div class="title"> Calcula Idade </div>
+        <div class="input">
+            <label>Nome:</label>  <!-- label,é usado com sentido de 'legenda', tag semântica-->
+            <input type="text" id='nome'>
+        </div>
+        <div class="input">
+            <label>Data Inicial:</label>
+            <input type="date" id='inicial'>
+        </div>
+        <div class="input">
+            <label>Data Final:</label>
+            <input type="date" id='final'>
+        </div>
+        <button id='calcular'>Calcular</button>
+
+        <div class="result" id='resultado'></div><!--espaço vazio no início da execução-->
+      </div>
+    </main>
+    <script src="./idade.js"></script>  <!-- aqui o diálogo entre js e html-->
+  </body>
+</html>
